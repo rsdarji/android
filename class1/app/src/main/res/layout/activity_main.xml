@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Happy Birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+
+        android:padding="20dp"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="259dp"
+        android:background="@drawable/happy_birthday"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="right"
+            android:padding="20dp"
+            android:paddingRight="10dp"
+            android:text="To"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:text="Sagar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/black"
+            android:padding="20dp"/>
+    </LinearLayout>
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+
+        <!--android:src="@drawable/backgroud"/>-->
+
+
+</LinearLayout>

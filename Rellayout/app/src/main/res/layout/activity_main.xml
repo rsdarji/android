@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#3c4397">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:src="@drawable/bg"
+
+        />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:background="#f32910"
+        android:textSize="20dp"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Montreal"
+        android:background="#f32910"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_toRightOf="@id/text1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Hello World!"
+        android:background="#193086"
+        android:textSize="20dp"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Hello World!"
+        android:background="#07013d"
+        android:textSize="32dp"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Hello World!"
+        android:background="#330102"
+        android:textSize="32dp"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="208dp"
+        android:text="Click"
+        android:background="#f32910"
+        android:onClick="clickMe"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="183dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="TextView" />
+
+
+</RelativeLayout>
+<LinearLayout>
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/basket_ball_score_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="9dp"
+        android:text="Basket Ball Score"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/socre_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="138dp"
+        android:layout_marginLeft="138dp"
+        android:layout_marginTop="232dp"
+        android:text="Score"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/team_a_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="56dp"
+        android:text="Team A"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/team_b_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/team_a_lable"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="Team B"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/team_a_score_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/team_a_lable"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="105dp"
+        android:onClick="teamAScorePlus"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/team_a_score_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/team_a_lable"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="298dp"
+        android:onClick="teamAScoreMinus"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/team_b_score_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/team_a_score_minus"
+        android:layout_alignStart="@+id/team_b_lable"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="teamBScorePlus"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/team_b_score_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/team_b_lable"
+        android:layout_alignBottom="@+id/team_a_score_minus"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="0dp"
+        android:onClick="teamBScoreMinus"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/team_a_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginLeft="97dp"
+        android:layout_marginBottom="194dp"
+        android:gravity="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/team_b_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/team_a_score"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:gravity="center"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/result_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="125dp"
+        android:layout_toEndOf="@+id/team_a_lable"
+        android:gravity="center"
+        android:onClick="result"
+        android:text="Result" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="95dp"
+        android:gravity="center"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/team_a_score_plus"
+        android:onClick="reset"
+        android:text="Reset" />
+
+</RelativeLayout>

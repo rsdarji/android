@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Spinner</string>
+
+    <string-array name="states">
+        <item>Gujarat</item>
+        <item>Maharastra</item>
+        <item>Madhyprades</item>
+        <item>Rajsthan</item>
+        <item>Karnataka</item>
+        <item>Jammu and Kashmir</item>
+        <item>Hariyana</item>
+        <item>Delhi</item>
+    </string-array>
+
+</resources>

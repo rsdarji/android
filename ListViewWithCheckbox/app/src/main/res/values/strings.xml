@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ListView With Checkbox</string>
+    <string name="list_of_fuits">List of Fruits</string>
+    <string name="no_message_list_found">"Sorry, no fruits in list!!!"</string>
+    <string name="fruit_name">"FruitName: "</string>
+    <string name="item_click">"On Item Click FruitName: "</string>
+    <string name="is_checked">" is Checked."</string>
+    <string name="is_unchecked">" is Unchecked."</string>
+</resources>

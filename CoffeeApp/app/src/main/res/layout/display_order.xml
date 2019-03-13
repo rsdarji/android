@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tax"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayOrder">
+
+    <TextView
+        android:id="@+id/thanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/thanks_stmt"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/coffeeordercountLable"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="61dp"
+        android:text="Coffee Quantity"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/priceLable"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="96dp"
+        android:text="Price"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/taxLable"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="132dp"
+        android:text="Tax"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/coffeeQuntity"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="61dp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/priceLable"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/taxValue"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/price"
+        android:layout_alignTop="@+id/taxLable" />
+
+    <TextView
+        android:id="@+id/totalLable"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="163dp"
+        android:text="Total"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/price"
+        android:layout_alignTop="@+id/totalLable"
+        android:textSize="18sp" />
+
+</RelativeLayout>
