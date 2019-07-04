@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+
+        <EditText
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <EditText
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:ems="10"
+            android:hint="Mobile"
+            android:inputType="number"
+            android:text="" />
+
+        <EditText
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <EditText
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/bloodgroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:ems="10"
+            android:hint="Blood Group"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <EditText
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:ems="10"
+            android:hint="User Name"
+            android:inputType="textPersonName"
+            android:text="" />
+
+
+        <EditText
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:text="" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorPrimary"
+            android:text="Register"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

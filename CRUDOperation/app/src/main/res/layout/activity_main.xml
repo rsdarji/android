@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/addAddress"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:text="Add Address" />
+
+    <Button
+        android:id="@+id/deleteAddress"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_below="@+id/addAddress"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_marginTop="93dp"
+        android:text="Delete Address" />
+
+    <TextView
+        android:id="@+id/textViewRecordCount"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deleteAddress"
+        android:text="0 records found"
+        android:padding="1dp" />
+
+    <ScrollView
+        android:id="@+id/scrollViewRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewRecordCount" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
