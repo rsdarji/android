@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/adding"
+        android:orderInCategory="100"
+        android:title="add 1 record"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/addingmany"
+        android:orderInCategory="100"
+        android:title="add 20 records"
+        app:showAsAction="never" />
+
+
+    <item
+    android:id="@+id/deletingall"
+    android:orderInCategory="100"
+    android:title="delete the whole database"
+    app:showAsAction="never" />
+
+    <item
+        android:id="@+id/deletingoneparam"
+        android:orderInCategory="100"
+        android:title="delete using 1 param"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/deletingtwoparams"
+        android:orderInCategory="100"
+        android:title="delete using 2 params"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/deletinglastrow"
+        android:orderInCategory="100"
+        android:title="delete last row"
+        app:showAsAction="never" />
+</menu>

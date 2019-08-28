@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp">
+
+
+        <ImageView
+            android:id="@+id/location_img"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/location" />
+
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Las Vegas, NV"
+            android:textSize="25dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/location_img"/>
+
+        <ImageView
+            android:id="@+id/right_icon"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:srcCompat="@drawable/right_icon_img" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+            android:background="?android:attr/listDivider" />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp">
+
+
+        <ImageView
+            android:id="@+id/guest_img"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/person" />
+
+        <TextView
+            android:id="@+id/guest_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textSize="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/guest_img"/>
+        <TextView
+            android:id="@+id/guest_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Guests"
+            android:textSize="25dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/guest_count"/>
+
+
+        <Button
+            android:id="@+id/guest_minus_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/guest_plus_button"
+            android:layout_marginRight="-5dp"
+            android:background="@color/colorAccent"
+            android:onClick="guestMinusCount"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/guest_plus_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:onClick="guestPlusCount"
+            android:background="@color/colorAccent"
+            android:text="+" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+
+            android:background="?android:attr/listDivider" />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp">
+
+
+        <ImageView
+            android:id="@+id/room_img"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/hotel" />
+
+        <TextView
+            android:id="@+id/room_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textSize="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/room_img"/>
+        <TextView
+            android:id="@+id/room_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Room"
+            android:textSize="25dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/room_count"/>
+
+
+        <Button
+            android:id="@+id/room_minus_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/room_plus_button"
+            android:layout_marginRight="-5dp"
+            android:onClick="roomMinusCount"
+            android:background="@color/colorAccent"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/room_plus_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:onClick="roomPlusCount"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorAccent"
+            android:text="+" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+
+            android:background="?android:attr/listDivider" />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp">
+
+
+        <ImageView
+            android:id="@+id/right_img"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/forward_arraw" />
+
+        <TextView
+            android:id="@+id/today_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Today"
+            android:textSize="25dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/right_img"/>
+
+        <ImageView
+            android:id="@+id/right_icon2"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:srcCompat="@drawable/right_icon_img" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+            android:background="?android:attr/listDivider" />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp">
+
+
+        <ImageView
+            android:id="@+id/back_arraw_img"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/back_arraw" />
+
+        <TextView
+            android:id="@+id/tomorrow_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Tomorrow"
+            android:textSize="25dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/back_arraw_img"/>
+
+        <ImageView
+            android:id="@+id/right_icon3"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:srcCompat="@drawable/right_icon_img" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+            android:background="?android:attr/listDivider" />
+
+    </RelativeLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:layout_margin="5dp">
+
+
+        <Button
+            android:id="@+id/book_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book"
+            android:onClick="book"
+            android:background="@color/colorAccent"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    </LinearLayout>
+
+</LinearLayout>

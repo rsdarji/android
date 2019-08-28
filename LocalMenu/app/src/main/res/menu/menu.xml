@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/local"
+        android:icon="@drawable/pin"
+        android:title="Local"/>
+    <item android:id="@+id/myplaces"
+        android:icon="@drawable/star"
+        android:title="myplaces" />
+    <item android:id="@+id/checkins"
+        android:icon="@drawable/check"
+        android:title="Checkins" />
+    <item android:id="@+id/latitue"
+        android:icon="@drawable/contact"
+        android:title="Latitude" />
+
+
+
+</menu>
